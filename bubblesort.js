@@ -1,15 +1,18 @@
-var numbers = [22,1,5,102,65,60];
-var tempVariable, tempVariable2;
+var numbers = [22, 4, 25, 16, 53, 150, 6];
+var tempVariable, tempVariable2,j;
 
-console.log("List of numbers before sorting: " + numbers);
+console.log(numbers);
 
-for(i = 0; i < numbers.length; i++){
-    if (numbers[i] > numbers[i+1]){
-        tempVariable = numbers[i+1];
-        tempVariable2 = numbers[i];
-        numbers[i] = tempVariable;
-        numbers[i+1] = tempVariable2;
-    } 
+for (var j = 0; j < numbers.length; j++){
+  for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] > numbers[i + 1]) {
+      tempVariable2 = numbers[i + 1];
+      tempVariable = numbers[i];
+      numbers[i] = tempVariable2;
+      numbers[i + 1] = tempVariable;
+    }
+  }
 }
+  
 
-console.log("List of numbers after sorting: " + numbers);
+
