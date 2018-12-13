@@ -1,5 +1,5 @@
 var numbers = [22, 4, 150, 45, 1558, 16, 25, 16, 53, 150, 6];
-var tempVariable, tempVariable2, j;
+var tempVariable, j;
 
 console.log("List of numbers before sorting: " + numbers);
 
